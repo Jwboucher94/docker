@@ -1,0 +1,25 @@
+version: '3.7'  # Use a modern Compose file version
+
+services:
+  backend:
+    build:
+      context: .  # Build context is the current directory (where your app.js is)
+      dockerfile: Dockerfile  # Specify the Dockerfile name
+    ports:
+      - "3000:3000"  # Expose port 3000 for internal network access
+    networks:
+      - test-network
+
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - backend  # Ensure the backend container is running first
+    ports:
+      - "80:80"  # Map port 80 of your host to port 80 of the Nginx container
+    networks:
+      - test-network
+
+networks:
+  test-network:

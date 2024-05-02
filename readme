@@ -1,0 +1,13 @@
+1. Install docker using one of the following links
+	a. Linux: 
+	b. Windows: 
+	c. Mac: 
+
+Using linux:
+	sudo docker run hello-world
+	git pull 
+	cd tester
+	sudo docker-compose up -d --build 	-> builds, creates (or recreates), starts, and detaches the containers (-d for detach)
+	sudo docker compose ps 			-> to confirm
+	access the website on port 80 with the IP address of the host system.
+	you will know it's working when it displays a message.
