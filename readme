@@ -10,5 +10,8 @@ Using linux:
 	sudo docker-compose up -d --build 	-> builds, creates (or recreates), starts, 
 						   and detaches the containers (-d for detach)
 	sudo docker compose ps 			-> to confirm
-	access the website on port 80 with the IP address of the host system.
-	you will know it's working when it displays a message.
+
+	Access - Port 80			-> you will know it's working when it displays a message.
+
+When you're finished:
+	docker-compose stop 			-> from the same folder
