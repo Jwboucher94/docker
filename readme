@@ -1,7 +1,7 @@
 1. Install docker using one of the following links
-	a. Linux: 
-	b. Windows: 
-	c. Mac: 
+	a. [Linux](https://docs.docker.com/desktop/install/linux-install/)
+	b. [Windows](https://docs.docker.com/desktop/install/windows-install/)
+	c. [Mac](https://docs.docker.com/desktop/install/mac-install/)
 
 Using linux:
 	sudo docker run hello-world
